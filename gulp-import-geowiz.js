@@ -2,7 +2,7 @@
 const gulp = require('gulp');
 
 // MODULES
-const clean = require('gulp-clean');
+const { deleteAsync } = require('del');
 
 // FILE LOCATIONS
 const build = '../geowiz-web/dist/geowiz-web/browser/**/*';
@@ -14,7 +14,7 @@ const portfolio = 'portfolio/geowiz/';
 
 // DELETE PORTFOLIO DIRECTORY
 gulp.task('delete', () => {
-  return gulp.src([portfolio], { force: true, read: false }).pipe(clean());
+  return deleteAsync([portfolio], { force: true });
 });
 
 // COPY BUILD FILES TO PORTFOLIO DIRECTORY

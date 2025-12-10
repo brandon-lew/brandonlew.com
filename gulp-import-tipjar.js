@@ -2,7 +2,7 @@
 const gulp = require('gulp');
 
 // MODULES
-const clean = require('gulp-clean');
+const { deleteAsync } = require('del');
 
 // FILE LOCATIONS
 const build = '../tipjar-web/build/**/*';
@@ -14,7 +14,7 @@ const portfolio = 'portfolio/tipjar/';
 
 // DELETE PORTFOLIO DIRECTORY
 gulp.task('delete', () => {
-  return gulp.src([portfolio], { force: true, read: false }).pipe(clean());
+  return deleteAsync([portfolio], { force: true });
 });
 
 // COPY BUILD FILES TO PORTFOLIO DIRECTORY
