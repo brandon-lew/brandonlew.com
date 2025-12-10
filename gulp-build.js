@@ -5,7 +5,7 @@ const gulp = require('gulp');
 const useref = require('gulp-useref');
 const gulpif = require('gulp-if');
 const jsMinify = require('gulp-uglify');
-const cssMinify = require('gulp-cssmin');
+const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
 // FILE LOCATIONS
@@ -22,7 +22,7 @@ gulp.task('html', () => {
     .src(`${sourceDir}.html`)
     .pipe(useref())
     .pipe(gulpif(['js/*.js', 'js/**/*.js'], jsMinify()))
-    .pipe(gulpif('css/*.css', cssMinify()))
+    .pipe(gulpif('css/*.css', cleanCSS()))
     .pipe(gulpif(`${sourceDir}.html`, rename(`${destDir}.html`)))
     .pipe(
       gulp.dest((file) => {
