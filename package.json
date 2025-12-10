@@ -29,8 +29,8 @@
     "open": "^11.0.0"
   },
   "devDependencies": {
+    "del": "^8.0.1",
     "gulp": "^5.0.1",
-    "del": "^7.1.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-if": "^3.0.0",
     "gulp-open": "^3.0.1",
