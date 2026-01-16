@@ -1,12 +1,12 @@
 // GULP
-const gulp = require('gulp');
+import gulp from 'gulp';
 
 // MODULES
-const useref = require('gulp-useref');
-const gulpif = require('gulp-if');
-const jsMinify = require('gulp-uglify');
-const cleanCSS = require('gulp-clean-css');
-const rename = require('gulp-rename');
+import useref from 'gulp-useref';
+import gulpif from 'gulp-if';
+import jsMinify from 'gulp-uglify';
+import cleanCSS from 'gulp-clean-css';
+import rename from 'gulp-rename';
 
 // FILE LOCATIONS
 const sourceDir = 'index-staging';
