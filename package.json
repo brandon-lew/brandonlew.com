@@ -2,7 +2,8 @@
   "name": "brandonlew.com",
   "version": "1.0.0",
   "description": "portfolio site",
-  "main": "index.html",
+  "private": true,
+  "type": "module",
   "scripts": {
     "branch-clean-up": "git branch -lvv | cut -c3- | awk '/: gone]/ {print $1}' | xargs git branch -D",
     "build": "gulp --gulpfile gulp-build.js",
@@ -16,15 +17,11 @@
     "type": "git",
     "url": "git+https://github.com/brandon-lew//brandonlew.com.git"
   },
-  "keywords": [
-    "portfolio"
-  ],
   "author": "brandon",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brandon-lew//brandonlew.com/issues"
+  "engines": {
+    "node": ">=20.0.0"
   },
-  "homepage": "https://github.com/brandon-lew//brandonlew.com#readme",
   "dependencies": {
     "open": "^11.0.0"
   },
