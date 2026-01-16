@@ -1,8 +1,8 @@
 // GULP
-const gulp = require('gulp');
+import gulp from 'gulp';
 
 // MODULES
-const { deleteAsync } = require('del');
+import { deleteAsync } from 'del';
 
 // FILE LOCATIONS
 const build = '../tipjar-web/build/**/*';

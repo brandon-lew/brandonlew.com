@@ -1,8 +1,10 @@
 // GULP
-const gulp = require('gulp');
+import gulp from 'gulp';
 
 // MODULES
-const sass = require('gulp-sass')(require('sass'));
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
 
 // SOURCE DIRECTORY
 const sourceDir = 'sass/';
