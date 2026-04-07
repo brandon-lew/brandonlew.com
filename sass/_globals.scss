@@ -1,5 +1,5 @@
 // PRESET VARIABLES AND MIXINS
-@use 'presets';
+@use 'presets' as *;
 
 /* GLOBALS */
 * {
@@ -19,9 +19,9 @@ body {
 }
 a {
   text-decoration: none;
-  @include presets.crossBrowser(transition, 0.3s ease-out);
+  @include crossBrowser(transition, 0.3s ease-out);
   &:hover {
-    @include presets.crossBrowser(transition, 0.3s ease-out);
+    @include crossBrowser(transition, 0.3s ease-out);
   }
 }
 h1,

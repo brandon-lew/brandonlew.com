@@ -1,13 +1,13 @@
 // PRESET VARIABLES AND MIXINS
-@use 'presets';
+@use 'presets' as *;
 
 /* FOOTER */
 .footer {
-  background-color: presets.$color-overlay-2;
+  background-color: $color-overlay-2;
   a {
-    color: presets.$color-gray-2;
+    color: $color-gray-2;
     &:hover {
-      color: presets.$color-aqua-1;
+      color: $color-aqua-1;
     }
   }
   .header {
