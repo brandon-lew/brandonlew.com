@@ -1,5 +1,5 @@
 // PRESET VARIABLES AND MIXINS
-@use 'presets';
+@use 'presets' as *;
 
 /* BANNER */
 .banner {
@@ -16,7 +16,7 @@
   .bannerOpacity {
     height: 100%;
     width: 100%;
-    background-color: presets.$color-overlay-1;
+    background-color: $color-overlay-1;
   }
   .bannerHeader {
     position: absolute;
@@ -28,7 +28,7 @@
     text-align: center;
     h1,
     p {
-      color: presets.$color-dark-text;
+      color: $color-dark-text;
     }
   }
 }

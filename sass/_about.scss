@@ -1,5 +1,5 @@
 // PRESET VARIABLES AND MIXINS
-@use 'presets';
+@use 'presets' as *;
 
 /* ABOUT */
 .about {
@@ -8,19 +8,16 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 25px;
-    @include presets.crossBrowser(border-radius, 50%);
-    @include presets.crossBrowser(
-      filter,
-      drop-shadow(3px 3px 3px presets.$color-shadow-1)
-    );
+    @include crossBrowser(border-radius, 50%);
+    @include crossBrowser(filter, drop-shadow(3px 3px 3px $color-shadow-1));
   }
   .profileText {
     padding-bottom: 40px;
   }
   .infoContainer {
-    background-color: presets.$color-gray-2;
+    background-color: $color-gray-2;
     padding: 20px;
-    @include presets.crossBrowser(border-radius, 4px);
+    @include crossBrowser(border-radius, 4px);
   }
   .infoContent {
     &:after {
@@ -30,9 +27,9 @@
       clear: both;
     }
     a {
-      color: presets.$color-dark-text;
+      color: $color-dark-text;
       &:hover {
-        color: presets.$color-aqua-1;
+        color: $color-aqua-1;
       }
     }
     ul {
@@ -46,7 +43,7 @@
     }
     .left {
       width: 30%;
-      color: presets.$color-blue-1;
+      color: $color-blue-1;
     }
     .right {
       width: 70%;

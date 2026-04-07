@@ -1,5 +1,5 @@
 // PRESET VARIABLES AND MIXINS
-@use 'presets';
+@use 'presets' as *;
 
 /* DEVELOPMENT */
 .development {
@@ -9,9 +9,9 @@
   &.portfolio {
     .portfolioModalBody {
       a {
-        color: presets.$color-dark-text;
+        color: $color-dark-text;
         &:hover {
-          color: presets.$color-aqua-1;
+          color: $color-aqua-1;
         }
       }
       img {
@@ -25,9 +25,9 @@
       .text {
         padding-top: 20px;
         a {
-          color: presets.$color-aqua-1;
+          color: $color-aqua-1;
           &:hover {
-            color: presets.$color-dark-text;
+            color: $color-dark-text;
             text-decoration: underline;
           }
         }

@@ -1,5 +1,5 @@
 // PRESET VARIABLES AND MIXINS
-@use 'presets';
+@use 'presets' as *;
 
 /* PHOTOGRAPHY */
 .photography {
@@ -14,17 +14,17 @@
     .continents {
       padding: 0 15px;
       margin-bottom: 10px;
-      color: presets.$color-aqua-1;
-      @include presets.crossBrowser(transition, 0.3s ease-out);
+      color: $color-aqua-1;
+      @include crossBrowser(transition, 0.3s ease-out);
       &:hover {
         cursor: pointer;
-        color: presets.$color-gray-1;
+        color: $color-gray-1;
         text-decoration: underline;
-        @include presets.crossBrowser(transition, 0.3s ease-out);
+        @include crossBrowser(transition, 0.3s ease-out);
       }
     }
     .active {
-      color: presets.$color-gray-1;
+      color: $color-gray-1;
       text-decoration: underline;
       &:hover {
         cursor: default;
@@ -37,11 +37,11 @@
     }
     .portfolioSlide {
       img {
-        @include presets.crossBrowser(border-radius, 4px);
+        @include crossBrowser(border-radius, 4px);
       }
     }
     .portfolioOverlay {
-      background-color: presets.$color-overlay-1;
+      background-color: $color-overlay-1;
     }
     .portfolioModalBody {
       text-align: center;
@@ -51,16 +51,16 @@
         background-color: transparent;
         font-family: 'Comfortaa', sans-serif;
         font-size: 1em;
-        color: presets.$color-aqua-1;
-        border: 1px solid presets.$color-gray-1;
-        @include presets.crossBrowser(border-radius, 4px);
-        @include presets.crossBrowser(transition, 0.3s ease-out);
+        color: $color-aqua-1;
+        border: 1px solid $color-gray-1;
+        @include crossBrowser(border-radius, 4px);
+        @include crossBrowser(transition, 0.3s ease-out);
         &:hover {
           cursor: pointer;
           color: #fff;
-          background-color: presets.$color-aqua-1;
-          border: 1px solid presets.$color-aqua-1;
-          @include presets.crossBrowser(transition, 0.3s ease-out);
+          background-color: $color-aqua-1;
+          border: 1px solid $color-aqua-1;
+          @include crossBrowser(transition, 0.3s ease-out);
         }
       }
     }
