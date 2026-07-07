@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -197,12 +197,15 @@
       rel="preload"
       href="css/styles.min.css"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
 
     <!-- DISABLED JS - LOAD STYLESHEET AND SET BACKGROUND IMAGE -->
     <noscript>
-      <link rel="stylesheet" href="css/styles.min.css">
+      <link rel="stylesheet" href="css/styles.min.css" />
       <style>
         .banner {
           background-image: url(images/2024_1483_c1_web.webp);
@@ -291,7 +294,7 @@
                       <li>name</li>
                       <li>location</li>
                       <li>e-mail</li>
-                      <li>social</li>
+                      <li>links</li>
                     </ul>
                   </div>
                   <div class="right infoContentColumn">
@@ -315,12 +318,6 @@
                           aria-label="GitHub"
                           target="_blank"
                           ><span class="fab fa-github"></span
-                        ></a>
-                        <a
-                          href="https://www.instagram.com/blew.photography/"
-                          aria-label="Instagram"
-                          target="_blank"
-                          ><span class="fab fa-instagram"></span
                         ></a>
                         <a
                           href="https://www.etsy.com/shop/blewphotography/"
@@ -367,7 +364,7 @@
               <!-- TIP JAR SLIDE -->
               <div
                 class="portfolioSlide"
-                onclick="_modal.display('modalTipJar');"
+                onclick="_modal.display('modalTipJar')"
               >
                 <img src="images/projectTipJar.webp" alt="tipjar app" />
                 <div class="portfolioOverlay">
@@ -380,7 +377,7 @@
                 <div class="portfolioModal">
                   <span
                     class="portfolioModalClose"
-                    onclick="_modal.close('modalTipJar');"
+                    onclick="_modal.close('modalTipJar')"
                     >X</span
                   >
                   <div class="portfolioModalHeader">
@@ -425,7 +422,7 @@
               <!-- ALLSTATE SLIDE -->
               <div
                 class="portfolioSlide"
-                onclick="_modal.display('modalAllstate');"
+                onclick="_modal.display('modalAllstate')"
               >
                 <img
                   src="images/projectAllstate.webp"
@@ -441,7 +438,7 @@
                 <div class="portfolioModal">
                   <span
                     class="portfolioModalClose"
-                    onclick="_modal.close('modalAllstate');"
+                    onclick="_modal.close('modalAllstate')"
                     >X</span
                   >
                   <div class="portfolioModalHeader">
@@ -474,7 +471,7 @@
               <!-- TRAVEL TRACKER SLIDE -->
               <div
                 class="portfolioSlide"
-                onclick="_modal.display('modalTravelTracker');"
+                onclick="_modal.display('modalTravelTracker')"
               >
                 <img
                   src="images/projectTravelTracker.webp"
@@ -490,7 +487,7 @@
                 <div class="portfolioModal">
                   <span
                     class="portfolioModalClose"
-                    onclick="_modal.close('modalTravelTracker');"
+                    onclick="_modal.close('modalTravelTracker')"
                     >X</span
                   >
                   <div class="portfolioModalHeader">
@@ -540,7 +537,7 @@
               <!-- ESURANCE SLIDE -->
               <div
                 class="portfolioSlide"
-                onclick="_modal.display('modalEsurance');"
+                onclick="_modal.display('modalEsurance')"
               >
                 <img src="images/projectEsurance.webp" alt="esurance" />
                 <div class="portfolioOverlay">
@@ -553,7 +550,7 @@
                 <div class="portfolioModal">
                   <span
                     class="portfolioModalClose"
-                    onclick="_modal.close('modalEsurance');"
+                    onclick="_modal.close('modalEsurance')"
                     >X</span
                   >
                   <div class="portfolioModalHeader">
@@ -651,12 +648,6 @@
           aria-label="GitHub"
           target="_blank"
           ><span class="fab fa-github"></span
-        ></a>
-        <a
-          href="https://www.instagram.com/blew.photography/"
-          aria-label="Instagram"
-          target="_blank"
-          ><span class="fab fa-instagram"></span
         ></a>
         <a
           href="https://www.etsy.com/shop/blewphotography/"
