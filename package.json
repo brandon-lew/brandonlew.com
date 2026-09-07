@@ -23,7 +23,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "open": "^11.0.1"
+    "open": "^11.0.2"
   },
   "devDependencies": {
     "del": "^8.0.1",
@@ -35,6 +35,6 @@
     "gulp-sass": "^6.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^5.0.0",
-    "sass": "^1.103.1"
+    "sass": "^1.104.0"
   }
 }
